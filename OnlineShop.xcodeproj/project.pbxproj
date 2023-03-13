@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58730029BDBE2300AEB39E /* RegisterViewController.swift */; };
+		EA58730229BF097900AEB39E /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */; };
+		EA58730329BF097C00AEB39E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */; };
+		EA58730429BF097F00AEB39E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FE29BDB58800AEB39E /* Montserrat-Medium.ttf */; };
+		EA58730529BF098100AEB39E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */; };
 		EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4929BC99CC00922342 /* AppDelegate.swift */; };
 		EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */; };
-		EAB29B4E29BC99CC00922342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4D29BC99CC00922342 /* ViewController.swift */; };
-		EAB29B5129BC99CC00922342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB29B4F29BC99CC00922342 /* Main.storyboard */; };
+		EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */; };
 		EAB29B5329BC99CF00922342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB29B5229BC99CF00922342 /* Assets.xcassets */; };
 		EAB29B5629BC99CF00922342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */; };
+		EAB29B6129BC9C2600922342 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6029BC9C2600922342 /* HomeViewController.swift */; };
+		EAB29B6329BC9C8100922342 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */; };
+		EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */; };
+		EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6629BC9DA500922342 /* ChatViewController.swift */; };
+		EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */; };
+		EAB29B7129BCA17200922342 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B7029BCA17200922342 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		EA5872FE29BDB58800AEB39E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		EA58730029BDBE2300AEB39E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EAB29B4629BC99CC00922342 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB29B4929BC99CC00922342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAB29B4D29BC99CC00922342 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAB29B5029BC99CC00922342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EAB29B5229BC99CF00922342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAB29B5529BC99CF00922342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB29B5729BC99CF00922342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB29B6029BC9C2600922342 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		EAB29B6629BC9DA500922342 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		EAB29B7029BCA17200922342 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA5872FF29BDBB0400AEB39E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EA58730029BDBE2300AEB39E /* RegisterViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		EAB29B3D29BC99CC00922342 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +84,65 @@
 		EAB29B4829BC99CC00922342 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
-				EAB29B4929BC99CC00922342 /* AppDelegate.swift */,
-				EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */,
-				EAB29B4D29BC99CC00922342 /* ViewController.swift */,
-				EAB29B4F29BC99CC00922342 /* Main.storyboard */,
-				EAB29B5229BC99CF00922342 /* Assets.xcassets */,
+				EAB29B5D29BC9B8600922342 /* App */,
+				EAB29B5E29BC9B9400922342 /* Controller */,
+				EAB29B6A29BCA06200922342 /* Resources */,
 				EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */,
 				EAB29B5729BC99CF00922342 /* Info.plist */,
 			);
 			path = OnlineShop;
+			sourceTree = "<group>";
+		};
+		EAB29B5D29BC9B8600922342 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29B4929BC99CC00922342 /* AppDelegate.swift */,
+				EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EAB29B5E29BC9B9400922342 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA5872FF29BDBB0400AEB39E /* Onboarding */,
+				EAB29B5F29BC9BA000922342 /* Core */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAB29B5F29BC9BA000922342 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */,
+				EAB29B6029BC9C2600922342 /* HomeViewController.swift */,
+				EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */,
+				EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */,
+				EAB29B6629BC9DA500922342 /* ChatViewController.swift */,
+				EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EAB29B6A29BCA06200922342 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29B6B29BCA0EB00922342 /* Font */,
+				EAB29B7029BCA17200922342 /* Resources.swift */,
+				EAB29B5229BC99CF00922342 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAB29B6B29BCA0EB00922342 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */,
+				EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */,
+				EA5872FE29BDB58800AEB39E /* Montserrat-Medium.ttf */,
+				EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +203,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA58730329BF097C00AEB39E /* Montserrat-Regular.ttf in Resources */,
+				EA58730429BF097F00AEB39E /* Montserrat-Medium.ttf in Resources */,
+				EA58730529BF098100AEB39E /* Montserrat-Bold.ttf in Resources */,
+				EA58730229BF097900AEB39E /* Montserrat-Light.ttf in Resources */,
 				EAB29B5629BC99CF00922342 /* LaunchScreen.storyboard in Resources */,
 				EAB29B5329BC99CF00922342 /* Assets.xcassets in Resources */,
-				EAB29B5129BC99CC00922342 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +219,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAB29B4E29BC99CC00922342 /* ViewController.swift in Sources */,
+				EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */,
+				EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */,
 				EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */,
+				EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */,
+				EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */,
 				EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */,
+				EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */,
+				EAB29B7129BCA17200922342 /* Resources.swift in Sources */,
+				EAB29B6329BC9C8100922342 /* FavouritesViewController.swift in Sources */,
+				EAB29B6129BC9C2600922342 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EAB29B4F29BC99CC00922342 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAB29B5029BC99CC00922342 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +372,8 @@
 				INFOPLIST_FILE = OnlineShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +381,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = gvelko90.OnlineShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +402,8 @@
 				INFOPLIST_FILE = OnlineShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +411,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = gvelko90.OnlineShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
