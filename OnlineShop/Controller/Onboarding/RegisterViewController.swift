@@ -6,10 +6,17 @@
 //
 
 import UIKit
+import Combine
 
 class RegisterViewController: UIViewController {
     
-    //MARK: - subviews
+    // MARK: - Properties
+    
+    private let viewModel = AuthenticationViewViewModel()
+    private var subscriptions: Set<AnyCancellable> = []
+    
+    //MARK: - Subviews
+    
     private let registerTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -66,6 +73,22 @@ class RegisterViewController: UIViewController {
         return textField
     }()
     
+    private let passwordTextField: UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.keyboardType = .emailAddress
+        textField.layer.masksToBounds = true
+        textField.layer.cornerRadius = C.cornerRadiusTextFields
+        textField.backgroundColor = R.Color.textField
+        textField.textAlignment = .center
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Password",
+            attributes: [NSAttributedString.Key.foregroundColor: R.Color.grayText,
+                         NSAttributedString.Key.font: R.Font.montserrat(type: .medium, size: 12)]
+        )
+        return textField
+    }()
+    
     private let registerButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -115,12 +138,14 @@ class RegisterViewController: UIViewController {
     }()
     
 
-    //MARK: - Liveycle
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupVC()
         setupSubviews()
+        addGesture()
         configureConstraints()
         
     }
@@ -128,6 +153,7 @@ class RegisterViewController: UIViewController {
 }
 
 //MARK: - Setups
+
 private extension RegisterViewController {
     
     func setupVC() {
@@ -139,6 +165,7 @@ private extension RegisterViewController {
         view.addSubview(firstNameTextField)
         view.addSubview(lastNameTextField)
         view.addSubview(emailTextField)
+        view.addSubview(passwordTextField)
         view.addSubview(registerButton)
         view.addSubview(isThereAccountTitleLabel)
         view.addSubview(loginButton)
@@ -146,9 +173,24 @@ private extension RegisterViewController {
         view.addSubview(signInWithAppleLabel)
     }
     
+    func addGesture() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapToDismiss)))
+    }
+    
+}
+
+//MARK: - Action
+
+private extension RegisterViewController {
+    
+    @objc func didTapToDismiss() {
+        view.endEditing(true)
+    }
+    
 }
 
 //MARK: - Constants
+
 private extension RegisterViewController {
     typealias C = Constants
     
@@ -165,12 +207,13 @@ private extension RegisterViewController {
 
 
 //MARK: - Configure constraints
+
 private extension RegisterViewController {
     
     func configureConstraints() {
         let registerTitleLabelConstraints = [
             registerTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            registerTitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 110)
+            registerTitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100)
         ]
         
         let firstNameTextFieldConstraints = [
@@ -194,9 +237,16 @@ private extension RegisterViewController {
             emailTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)
         ]
         
+        let passwordTextFieldConstraints = [
+            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 35),
+            passwordTextField.heightAnchor.constraint(equalToConstant: C.registerTextFieldsHeight),
+            passwordTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)
+        ]
+        
         let registerButtonConstraints = [
             registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            registerButton.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 35),
+            registerButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 35),
             registerButton.heightAnchor.constraint(equalToConstant: C.registerButtonHeight),
             registerButton.widthAnchor.constraint(equalToConstant: C.registerButtonWidth)
         ]
@@ -226,6 +276,7 @@ private extension RegisterViewController {
         NSLayoutConstraint.activate(firstNameTextFieldConstraints)
         NSLayoutConstraint.activate(lastNameTextFieldConstraints)
         NSLayoutConstraint.activate(emailTextFieldConstraints)
+        NSLayoutConstraint.activate(passwordTextFieldConstraints)
         NSLayoutConstraint.activate(registerButtonConstraints)
         NSLayoutConstraint.activate(isThereAccountTitleLabelConstraints)
         NSLayoutConstraint.activate(loginButtonConstraints)
