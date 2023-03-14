@@ -10,7 +10,7 @@ import Foundation
 
 final class AuthenticationViewViewModel: ObservableObject {
     
-    // MARK: - Properties
+    //MARK: - Properties
 
     @Published var firstName: String?
     @Published var lastName: String?
@@ -50,8 +50,6 @@ final class AuthenticationViewViewModel: ObservableObject {
         print(user)
         
     }
-    
-    
     
     
 }

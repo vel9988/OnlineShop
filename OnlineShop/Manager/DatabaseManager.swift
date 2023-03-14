@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 enum DatabaseError: Error {
     case failedToAddUser
@@ -37,7 +38,23 @@ final class DatabaseManager {
         
     }
     
-    
-    
-    
+    func isRegisterUser(from email: String) -> Bool {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return false }
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "email == %@", email)
+
+        do {
+            let results = try context.fetch(fetchRequest)
+            if results.count > 0 {
+                return true
+            }
+        } catch {
+            print(error)
+        }
+        return false
+    }
+
+   
 }
