@@ -188,6 +188,12 @@ private extension RegisterViewController {
             self?.registerButton.isEnabled = validationState
         }
         .store(in: &subscriptions)
+        
+        viewModel.$error.sink { [weak self] errorString in
+            guard let error = errorString else { return }
+            self?.presentAlert(with: error)
+        }
+        .store(in: &subscriptions)
     }
     
 }
@@ -195,6 +201,13 @@ private extension RegisterViewController {
 //MARK: - Action
 
 private extension RegisterViewController {
+    
+    func presentAlert(with error: String) {
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        let okayButton = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okayButton)
+        present(alert, animated: true)
+    }
     
     @objc func didTapToDismiss() {
         view.endEditing(true)

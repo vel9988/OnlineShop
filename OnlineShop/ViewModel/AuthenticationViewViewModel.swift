@@ -19,6 +19,8 @@ final class AuthenticationViewViewModel: ObservableObject {
     @Published var isAuthenticationFormValid: Bool = false
     @Published var error: String?
     
+    private var isDuplicateEmail: Bool = true
+    
     //MARK: - Func
     
     func validateAuthenticationForm() {
@@ -44,10 +46,16 @@ final class AuthenticationViewViewModel: ObservableObject {
               let lastName = lastName,
               let email = email,
               let password = password else { return }
-        let user = UserApp(firstName: firstName, lastName: lastName, email: email, password: password)
-        DatabaseManager.shared.collectionUsers(add: user)
-        print("user saved")
-        print(user)
+        isDuplicateEmail = DatabaseManager.shared.isRegisterUserFrom(email: email)
+        if !isDuplicateEmail {
+            let user = UserApp(firstName: firstName, lastName: lastName, email: email, password: password)
+            DatabaseManager.shared.collectionUsers(add: user)
+            print("user saved")
+            print(user)
+        } else {
+            error = "Пользователь с такими данными уже существует"
+        }
+        
         
     }
     
