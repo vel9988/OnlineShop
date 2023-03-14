@@ -10,6 +10,8 @@ import Foundation
 
 final class AuthenticationViewViewModel: ObservableObject {
     
+    // MARK: - Properties
+
     @Published var firstName: String?
     @Published var lastName: String?
     @Published var email: String?
@@ -17,11 +19,39 @@ final class AuthenticationViewViewModel: ObservableObject {
     @Published var isAuthenticationFormValid: Bool = false
     @Published var error: String?
     
+    //MARK: - Func
+    
+    func validateAuthenticationForm() {
+        guard let firstName = firstName,
+              let lastName = lastName,
+              let email = email,
+              let password = password else {
+            isAuthenticationFormValid = false
+            return
+        }
+        isAuthenticationFormValid = firstName.count >= 2 && lastName.count >= 2 && isValidEmail(email) && password.count >= 8
+    }
+    
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
+    
+    func createUser() {
+        guard let firstName = firstName,
+              let lastName = lastName,
+              let email = email,
+              let password = password else { return }
+        let user = UserApp(firstName: firstName, lastName: lastName, email: email, password: password)
+        DatabaseManager.shared.collectionUsers(add: user)
+        print("user saved")
+        print(user)
+        
+    }
+    
+    
+    
     
 }

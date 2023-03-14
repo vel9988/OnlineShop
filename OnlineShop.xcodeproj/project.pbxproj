@@ -24,6 +24,9 @@
 		EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */; };
 		EAB29B7129BCA17200922342 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B7029BCA17200922342 /* Resources.swift */; };
 		EAC7154929BF307C0085C6F1 /* AuthenticationViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */; };
+		EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154A29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld */; };
+		EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */; };
+		EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7155129BF43870085C6F1 /* UserApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		EAB29B7029BCA17200922342 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewViewModel.swift; sourceTree = "<group>"; };
+		EAC7154B29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineShopModel.xcdatamodel; sourceTree = "<group>"; };
+		EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		EAC7155129BF43870085C6F1 /* UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +92,15 @@
 		EAB29B4829BC99CC00922342 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				EAC7155029BF43640085C6F1 /* Model */,
 				EAB29B5D29BC9B8600922342 /* App */,
+				EAC7154D29BF407B0085C6F1 /* Manager */,
 				EAC7154729BF304F0085C6F1 /* ViewModel */,
 				EAB29B5E29BC9B9400922342 /* Controller */,
 				EAB29B6A29BCA06200922342 /* Resources */,
 				EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */,
 				EAB29B5729BC99CF00922342 /* Info.plist */,
+				EAC7154A29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld */,
 			);
 			path = OnlineShop;
 			sourceTree = "<group>";
@@ -154,6 +163,22 @@
 				EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAC7154D29BF407B0085C6F1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EAC7155029BF43640085C6F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAC7155129BF43870085C6F1 /* UserApp.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,12 +257,15 @@
 			files = (
 				EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */,
 				EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */,
+				EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */,
 				EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */,
 				EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */,
 				EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */,
+				EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */,
 				EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */,
 				EAC7154929BF307C0085C6F1 /* AuthenticationViewViewModel.swift in Sources */,
 				EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */,
+				EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */,
 				EAB29B7129BCA17200922342 /* Resources.swift in Sources */,
 				EAB29B6329BC9C8100922342 /* FavouritesViewController.swift in Sources */,
 				EAB29B6129BC9C2600922342 /* HomeViewController.swift in Sources */,
@@ -454,6 +482,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAC7154A29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAC7154B29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodel */,
+			);
+			currentVersion = EAC7154B29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodel */;
+			path = OnlineShopModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EAB29B3E29BC99CC00922342 /* Project object */;
 }

@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class RegisterViewController: UIViewController {
+final class RegisterViewController: UIViewController {
     
     // MARK: - Properties
     
@@ -146,6 +146,7 @@ class RegisterViewController: UIViewController {
         setupVC()
         setupSubviews()
         addGesture()
+        bindViews()
         configureConstraints()
         
     }
@@ -177,6 +178,18 @@ private extension RegisterViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapToDismiss)))
     }
     
+    func bindViews() {
+        firstNameTextField.addTarget(self, action: #selector(didChangeFirsNameField), for: .editingChanged)
+        lastNameTextField.addTarget(self, action: #selector(didChangeLastNameField), for: .editingChanged)
+        emailTextField.addTarget(self, action: #selector(didChangeEmailField), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(didChangePasswordField), for: .editingChanged)
+        registerButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
+        viewModel.$isAuthenticationFormValid.sink { [weak self] validationState in
+            self?.registerButton.isEnabled = validationState
+        }
+        .store(in: &subscriptions)
+    }
+    
 }
 
 //MARK: - Action
@@ -185,6 +198,30 @@ private extension RegisterViewController {
     
     @objc func didTapToDismiss() {
         view.endEditing(true)
+    }
+    
+    @objc func didChangeFirsNameField() {
+        viewModel.firstName = firstNameTextField.text
+        viewModel.validateAuthenticationForm()
+    }
+    
+    @objc func didChangeLastNameField() {
+        viewModel.lastName = lastNameTextField.text
+        viewModel.validateAuthenticationForm()
+    }
+    
+    @objc func didChangeEmailField() {
+        viewModel.email = emailTextField.text
+        viewModel.validateAuthenticationForm()
+    }
+    
+    @objc func didChangePasswordField() {
+        viewModel.password = passwordTextField.text
+        viewModel.validateAuthenticationForm()
+    }
+    
+    @objc func didTapSignIn() {
+        viewModel.createUser()
     }
     
 }
