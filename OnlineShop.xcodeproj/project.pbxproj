@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA4069F629C2EC6A00E0EFD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */; };
 		EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */; };
+		EA4069FB29C30B0400E0EFD9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069FA29C30B0400E0EFD9 /* AuthManager.swift */; };
 		EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58730029BDBE2300AEB39E /* RegisterViewController.swift */; };
 		EA58730229BF097900AEB39E /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */; };
 		EA58730329BF097C00AEB39E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
+		EA4069FA29C30B0400E0EFD9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -105,8 +107,8 @@
 		EAB29B4829BC99CC00922342 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
-				EAC7155029BF43640085C6F1 /* Model */,
 				EAB29B5D29BC9B8600922342 /* App */,
+				EAC7155029BF43640085C6F1 /* Model */,
 				EAC7154D29BF407B0085C6F1 /* Manager */,
 				EAC7154729BF304F0085C6F1 /* ViewModel */,
 				EAB29B5E29BC9B9400922342 /* Controller */,
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */,
+				EA4069FA29C30B0400E0EFD9 /* AuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */,
 				EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */,
 				EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */,
+				EA4069FB29C30B0400E0EFD9 /* AuthManager.swift in Sources */,
 				EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */,
 				EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */,
 				EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */,

@@ -118,6 +118,7 @@ final class RegisterViewController: UIViewController {
         button.setTitle("Log in", for: .normal)
         button.tintColor = R.Color.universalBlue
         button.titleLabel?.font = R.Font.montserrat(type: .medium, size: 12)
+        button.addTarget(RegisterViewController.self, action: #selector(didTapLoginButton), for: .touchUpInside)
         return button
     }()
     
@@ -213,6 +214,10 @@ private extension RegisterViewController {
     
     @objc func didTapToDismiss() {
         view.endEditing(true)
+    }
+    
+    @objc func didTapLoginButton() {
+        
     }
     
     @objc func didChangeFirsNameField() {
