@@ -76,8 +76,10 @@ final class RegisterViewController: UIViewController {
     private let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.keyboardType = .emailAddress
+        textField.keyboardType = .default
         textField.layer.masksToBounds = true
+        textField.isSecureTextEntry = true
+        textField.enablePasswordToggle()
         textField.layer.cornerRadius = C.cornerRadiusTextFields
         textField.backgroundColor = R.Color.textField
         textField.textAlignment = .center
@@ -288,7 +290,7 @@ private extension RegisterViewController {
         ]
         
         let passwordTextFieldConstraints = [
-            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 12),
             passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 35),
             passwordTextField.heightAnchor.constraint(equalToConstant: C.registerTextFieldsHeight),
             passwordTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)

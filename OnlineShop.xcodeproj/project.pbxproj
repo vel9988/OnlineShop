@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4069F629C2EC6A00E0EFD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */; };
+		EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */; };
 		EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58730029BDBE2300AEB39E /* RegisterViewController.swift */; };
 		EA58730229BF097900AEB39E /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */; };
 		EA58730329BF097C00AEB39E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -65,10 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA4069F729C2FA3600E0EFD9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EA5872FF29BDBB0400AEB39E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				EA58730029BDBE2300AEB39E /* RegisterViewController.swift */,
+				EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -98,6 +111,7 @@
 				EAC7154729BF304F0085C6F1 /* ViewModel */,
 				EAB29B5E29BC9B9400922342 /* Controller */,
 				EAB29B6A29BCA06200922342 /* Resources */,
+				EA4069F729C2FA3600E0EFD9 /* Extension */,
 				EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */,
 				EAB29B5729BC99CF00922342 /* Info.plist */,
 				EAC7154A29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld */,
@@ -258,6 +272,8 @@
 				EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */,
 				EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */,
 				EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */,
+				EA4069F629C2EC6A00E0EFD9 /* LoginViewController.swift in Sources */,
+				EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */,
 				EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */,
 				EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */,
 				EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */,

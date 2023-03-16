@@ -16,6 +16,7 @@ final class AuthenticationViewViewModel: ObservableObject {
     @Published var lastName: String?
     @Published var email: String?
     @Published var password: String?
+    @Published var user: User?
     @Published var isAuthenticationFormValid: Bool = false
     @Published var error: String?
     
@@ -36,7 +37,6 @@ final class AuthenticationViewViewModel: ObservableObject {
     
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
@@ -50,8 +50,6 @@ final class AuthenticationViewViewModel: ObservableObject {
         if !isDuplicateEmail {
             let user = UserApp(firstName: firstName, lastName: lastName, email: email, password: password)
             DatabaseManager.shared.collectionUsers(add: user)
-            print("user saved")
-            print(user)
         } else {
             error = "Пользователь с такими данными уже существует"
         }
