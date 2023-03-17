@@ -20,6 +20,8 @@ final class AuthenticationViewViewModel: ObservableObject {
     @Published var isAuthenticationFormValid: Bool = false
     @Published var error: String?
     
+    //MARK: - Private properties
+
     private var isDuplicateEmail: Bool = true
     
     //MARK: - Func

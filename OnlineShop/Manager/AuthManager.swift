@@ -11,8 +11,5 @@ import Foundation
 final class AuthManager {
     static let shared = AuthManager()
     
-    func registerUser(with email: String, password: String) -> AnyPublisher<UserApp, Error> {
-        
-    }
     
 }

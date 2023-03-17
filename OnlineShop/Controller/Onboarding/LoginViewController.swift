@@ -20,8 +20,8 @@ final class LoginViewController: UIViewController {
     private let loginTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Sign in"
-        label.font = R.Font.montserrat(type: .bold, size: 26)
+        label.text = "Welcome back"
+        label.font = R.Font.montserrat(type: .medium, size: 26)
         return label
     }()
     
@@ -62,7 +62,7 @@ final class LoginViewController: UIViewController {
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Sign in", for: .normal)
+        button.setTitle("Login", for: .normal)
         button.tintColor = .white
         button.titleLabel?.font = R.Font.montserrat(type: .bold, size: 16)
         button.backgroundColor = R.Color.universalBlue
@@ -108,7 +108,7 @@ private extension LoginViewController {
     func bindViews() {
         emailTextField.addTarget(self, action: #selector(didChangeEmailField), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(didChangePasswordField), for: .editingChanged)
-        loginButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         viewModel.$isAuthenticationFormValid.sink { [weak self] validationState in
             self?.loginButton.isEnabled = validationState
         }
@@ -148,8 +148,8 @@ private extension LoginViewController {
         viewModel.validateAuthenticationForm()
     }
     
-    @objc func didTapSignIn() {
-        viewModel.createUser()
+    @objc func didTapLogin() {
+        
     }
     
 }
@@ -178,18 +178,18 @@ private extension LoginViewController {
     func configureConstraints() {
         let loginTitleLabelConstraints = [
             loginTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginTitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100)
+            loginTitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60)
         ]
         
         let emailTextFieldConstraints = [
             emailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            emailTextField.topAnchor.constraint(equalTo: loginTitleLabel.bottomAnchor, constant: 35),
+            emailTextField.topAnchor.constraint(equalTo: loginTitleLabel.bottomAnchor, constant: 70),
             emailTextField.heightAnchor.constraint(equalToConstant: C.registerTextFieldsHeight),
             emailTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)
         ]
         
         let passwordTextFieldConstraints = [
-            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 12),
+            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 35),
             passwordTextField.heightAnchor.constraint(equalToConstant: C.registerTextFieldsHeight),
             passwordTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)
@@ -197,7 +197,7 @@ private extension LoginViewController {
         
         let loginButtonConstraints = [
             loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 35),
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 100),
             loginButton.heightAnchor.constraint(equalToConstant: C.registerButtonHeight),
             loginButton.widthAnchor.constraint(equalToConstant: C.registerButtonWidth)
         ]

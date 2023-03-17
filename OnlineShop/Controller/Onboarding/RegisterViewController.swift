@@ -118,7 +118,6 @@ final class RegisterViewController: UIViewController {
         button.setTitle("Log in", for: .normal)
         button.tintColor = R.Color.universalBlue
         button.titleLabel?.font = R.Font.montserrat(type: .medium, size: 12)
-        button.addTarget(RegisterViewController.self, action: #selector(didTapLoginButton), for: .touchUpInside)
         return button
     }()
     
@@ -187,6 +186,7 @@ private extension RegisterViewController {
         emailTextField.addTarget(self, action: #selector(didChangeEmailField), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(didChangePasswordField), for: .editingChanged)
         registerButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         viewModel.$isAuthenticationFormValid.sink { [weak self] validationState in
             self?.registerButton.isEnabled = validationState
         }
@@ -217,7 +217,8 @@ private extension RegisterViewController {
     }
     
     @objc func didTapLoginButton() {
-        
+        let vc = LoginViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func didChangeFirsNameField() {
@@ -295,7 +296,7 @@ private extension RegisterViewController {
         ]
         
         let passwordTextFieldConstraints = [
-            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 12),
+            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 35),
             passwordTextField.heightAnchor.constraint(equalToConstant: C.registerTextFieldsHeight),
             passwordTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)

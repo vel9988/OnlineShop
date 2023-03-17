@@ -30,6 +30,7 @@
 		EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154A29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld */; };
 		EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */; };
 		EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7155129BF43870085C6F1 /* UserApp.swift */; };
+		EACD115A29C329B200307288 /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACD115929C329B200307288 /* HomeViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		EAC7154B29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineShopModel.xcdatamodel; sourceTree = "<group>"; };
 		EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		EAC7155129BF43870085C6F1 /* UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApp.swift; sourceTree = "<group>"; };
+		EACD115929C329B200307288 /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */,
+				EACD115929C329B200307288 /* HomeViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */,
 				EAB29B7129BCA17200922342 /* Resources.swift in Sources */,
 				EAB29B6329BC9C8100922342 /* FavouritesViewController.swift in Sources */,
+				EACD115A29C329B200307288 /* HomeViewViewModel.swift in Sources */,
 				EAB29B6129BC9C2600922342 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
