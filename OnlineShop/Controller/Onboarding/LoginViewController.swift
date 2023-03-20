@@ -10,7 +10,7 @@ import Combine
 
 final class LoginViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: - Private properties
     
     private let viewModel = AuthenticationViewViewModel()
     private var subscriptions: Set<AnyCancellable> = []

@@ -22,6 +22,7 @@ final class AuthenticationViewViewModel: ObservableObject {
     
     //MARK: - Private properties
 
+    private var subscriptions: Set<AnyCancellable> = []
     private var isDuplicateEmail: Bool = true
     
     //MARK: - Func
@@ -52,6 +53,15 @@ final class AuthenticationViewViewModel: ObservableObject {
         if !isDuplicateEmail {
             let user = UserApp(firstName: firstName, lastName: lastName, email: email, password: password)
             DatabaseManager.shared.collectionUsers(add: user)
+                .sink { completion in
+                    if case .failure(let error) = completion {
+                        print(error.localizedDescription)
+                    }
+                } receiveValue: { [weak self] user in
+                    self?.user = user
+                }
+                .store(in: &subscriptions)
+
         } else {
             error = "Пользователь с такими данными уже существует"
         }

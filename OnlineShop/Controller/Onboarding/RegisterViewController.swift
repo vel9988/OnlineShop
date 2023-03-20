@@ -10,7 +10,7 @@ import Combine
 
 final class RegisterViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: - Private properties
     
     private let viewModel = AuthenticationViewViewModel()
     private var subscriptions: Set<AnyCancellable> = []
@@ -189,6 +189,13 @@ private extension RegisterViewController {
         loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         viewModel.$isAuthenticationFormValid.sink { [weak self] validationState in
             self?.registerButton.isEnabled = validationState
+        }
+        .store(in: &subscriptions)
+        
+        viewModel.$user.sink { [weak self] user in
+            guard user != nil else { return }
+            guard let vc = self?.navigationController?.viewControllers.first as? RegisterViewController else { return }
+            vc.dismiss(animated: true)
         }
         .store(in: &subscriptions)
         
