@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA01615229DC040200915DA4 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01615129DC040200915DA4 /* UserAccountViewModel.swift */; };
 		EA4069F629C2EC6A00E0EFD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */; };
 		EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */; };
 		EA4069FB29C30B0400E0EFD9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4069FA29C30B0400E0EFD9 /* AuthManager.swift */; };
+		EA52E46E29C8684500E0D641 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52E46D29C8684500E0D641 /* AppCoordinator.swift */; };
+		EA52E47229C869AD00E0D641 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52E47129C869AD00E0D641 /* Coordinator.swift */; };
+		EA52E47A29C86B0F00E0D641 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52E47929C86B0F00E0D641 /* MainCoordinator.swift */; };
+		EA52E48629C86BB700E0D641 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52E48529C86BB700E0D641 /* AuthenticationCoordinator.swift */; };
 		EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58730029BDBE2300AEB39E /* RegisterViewController.swift */; };
 		EA58730229BF097900AEB39E /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */; };
 		EA58730329BF097C00AEB39E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */; };
@@ -26,16 +31,21 @@
 		EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6629BC9DA500922342 /* ChatViewController.swift */; };
 		EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */; };
 		EAB29B7129BCA17200922342 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B7029BCA17200922342 /* Resources.swift */; };
-		EAC7154929BF307C0085C6F1 /* AuthenticationViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */; };
+		EAC7154929BF307C0085C6F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154829BF307C0085C6F1 /* AuthenticationViewModel.swift */; };
 		EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154A29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld */; };
 		EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */; };
 		EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7155129BF43870085C6F1 /* UserApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA01615129DC040200915DA4 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
 		EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA4069F829C2FA6400E0EFD9 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		EA4069FA29C30B0400E0EFD9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		EA52E46D29C8684500E0D641 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EA52E47129C869AD00E0D641 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EA52E47929C86B0F00E0D641 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EA52E48529C86BB700E0D641 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		EA5872FB29BDB56100AEB39E /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -54,7 +64,7 @@
 		EAB29B6629BC9DA500922342 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		EAB29B7029BCA17200922342 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewViewModel.swift; sourceTree = "<group>"; };
+		EAC7154829BF307C0085C6F1 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		EAC7154B29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineShopModel.xcdatamodel; sourceTree = "<group>"; };
 		EAC7154E29BF40AE0085C6F1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		EAC7155129BF43870085C6F1 /* UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApp.swift; sourceTree = "<group>"; };
@@ -79,13 +89,45 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		EA5872FF29BDBB0400AEB39E /* Onboarding */ = {
+		EA52E46C29C8682E00E0D641 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EA52E47029C869A100E0D641 /* Protocol */,
+				EA52E46D29C8684500E0D641 /* AppCoordinator.swift */,
+				EA52E48529C86BB700E0D641 /* AuthenticationCoordinator.swift */,
+				EA52E47929C86B0F00E0D641 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EA52E47029C869A100E0D641 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EA52E47129C869AD00E0D641 /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EA52E47329C86A8B00E0D641 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */,
+				EAB29B6029BC9C2600922342 /* HomeViewController.swift */,
+				EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */,
+				EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */,
+				EAB29B6629BC9DA500922342 /* ChatViewController.swift */,
+				EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EA5872FF29BDBB0400AEB39E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				EA58730029BDBE2300AEB39E /* RegisterViewController.swift */,
 				EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */,
 			);
-			path = Onboarding;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		EAB29B3D29BC99CC00922342 = {
@@ -108,10 +150,11 @@
 			isa = PBXGroup;
 			children = (
 				EAB29B5D29BC9B8600922342 /* App */,
-				EAC7155029BF43640085C6F1 /* Model */,
 				EAC7154D29BF407B0085C6F1 /* Manager */,
+				EA52E46C29C8682E00E0D641 /* Coordinator */,
 				EAC7154729BF304F0085C6F1 /* ViewModel */,
 				EAB29B5E29BC9B9400922342 /* Controller */,
+				EAC7155029BF43640085C6F1 /* Model */,
 				EAB29B6A29BCA06200922342 /* Resources */,
 				EA4069F729C2FA3600E0EFD9 /* Extension */,
 				EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */,
@@ -133,7 +176,7 @@
 		EAB29B5E29BC9B9400922342 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EA5872FF29BDBB0400AEB39E /* Onboarding */,
+				EA5872FF29BDBB0400AEB39E /* Authentication */,
 				EAB29B5F29BC9BA000922342 /* Core */,
 			);
 			path = Controller;
@@ -142,12 +185,7 @@
 		EAB29B5F29BC9BA000922342 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */,
-				EAB29B6029BC9C2600922342 /* HomeViewController.swift */,
-				EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */,
-				EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */,
-				EAB29B6629BC9DA500922342 /* ChatViewController.swift */,
-				EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */,
+				EA52E47329C86A8B00E0D641 /* Main */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -176,7 +214,8 @@
 		EAC7154729BF304F0085C6F1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EAC7154829BF307C0085C6F1 /* AuthenticationViewViewModel.swift */,
+				EAC7154829BF307C0085C6F1 /* AuthenticationViewModel.swift */,
+				EA01615129DC040200915DA4 /* UserAccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -275,15 +314,20 @@
 				EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */,
 				EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */,
 				EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */,
+				EA52E48629C86BB700E0D641 /* AuthenticationCoordinator.swift in Sources */,
 				EA4069F629C2EC6A00E0EFD9 /* LoginViewController.swift in Sources */,
 				EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */,
+				EA52E46E29C8684500E0D641 /* AppCoordinator.swift in Sources */,
+				EA52E47229C869AD00E0D641 /* Coordinator.swift in Sources */,
 				EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */,
+				EA01615229DC040200915DA4 /* UserAccountViewModel.swift in Sources */,
 				EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */,
 				EA4069FB29C30B0400E0EFD9 /* AuthManager.swift in Sources */,
 				EAB29B6729BC9DA500922342 /* ChatViewController.swift in Sources */,
 				EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */,
 				EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */,
-				EAC7154929BF307C0085C6F1 /* AuthenticationViewViewModel.swift in Sources */,
+				EA52E47A29C86B0F00E0D641 /* MainCoordinator.swift in Sources */,
+				EAC7154929BF307C0085C6F1 /* AuthenticationViewModel.swift in Sources */,
 				EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */,
 				EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */,
 				EAB29B7129BCA17200922342 /* Resources.swift in Sources */,

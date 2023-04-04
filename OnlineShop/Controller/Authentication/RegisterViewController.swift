@@ -12,7 +12,7 @@ final class RegisterViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = AuthenticationViewViewModel()
+    private let viewModel = AuthenticationViewModel()
     private var subscriptions: Set<AnyCancellable> = []
     
     //MARK: - Subviews
@@ -118,7 +118,6 @@ final class RegisterViewController: UIViewController {
         button.setTitle("Log in", for: .normal)
         button.tintColor = R.Color.universalBlue
         button.titleLabel?.font = R.Font.montserrat(type: .medium, size: 12)
-        button.addTarget(RegisterViewController.self, action: #selector(didTapLoginButton), for: .touchUpInside)
         return button
     }()
     
@@ -187,6 +186,7 @@ private extension RegisterViewController {
         emailTextField.addTarget(self, action: #selector(didChangeEmailField), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(didChangePasswordField), for: .editingChanged)
         registerButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         viewModel.$isAuthenticationFormValid.sink { [weak self] validationState in
             self?.registerButton.isEnabled = validationState
         }

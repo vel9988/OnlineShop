@@ -1,5 +1,5 @@
 //
-//  AuthenticationViewViewModel.swift
+//  AuthenticationViewModel.swift
 //  OnlineShop
 //
 //  Created by Dmitryi Velko on 13.03.2023.
@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class AuthenticationViewViewModel: ObservableObject {
+final class AuthenticationViewModel: ObservableObject {
     
     //MARK: - Properties
 

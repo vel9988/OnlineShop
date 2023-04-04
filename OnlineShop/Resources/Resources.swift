@@ -23,7 +23,6 @@ enum Resources {
     // MARK: - Image
     
     enum Image {
-        static let ellipse = UIImage(named: "ellipse")!
         static let mockImage = UIImage(systemName: "photo.stack.fill")!
         
         enum TabBar {
