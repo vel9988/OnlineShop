@@ -12,10 +12,24 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemCyan
+        setupVC()
         
     }
     
 
 
+}
+
+//MARK: - Setups
+
+private extension ChatViewController {
+    
+    func setupVC() {
+        view.backgroundColor = R.Color.background
+    }
+    
+    func setupSubviews() {
+        
+    }
+    
 }

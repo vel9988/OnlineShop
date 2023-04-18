@@ -12,9 +12,23 @@ class FavouritesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemPink
+        setupVC()
         
     }
     
 
+}
+
+//MARK: - Setups
+
+private extension FavouritesViewController {
+    
+    func setupVC() {
+        view.backgroundColor = R.Color.background
+    }
+    
+    func setupSubviews() {
+        
+    }
+    
 }

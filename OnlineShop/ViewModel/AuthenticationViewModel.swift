@@ -11,12 +11,13 @@ import Foundation
 final class AuthenticationViewModel: ObservableObject {
     
     //MARK: - Properties
+    
+    var showLoginScreen: () -> () = { }
 
     @Published var firstName: String?
     @Published var lastName: String?
     @Published var email: String?
     @Published var password: String?
-    @Published var user: User?
     @Published var isAuthenticationFormValid: Bool = false
     @Published var error: String?
     

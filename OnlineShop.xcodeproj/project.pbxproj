@@ -20,9 +20,14 @@
 		EA58730329BF097C00AEB39E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FC29BDB58800AEB39E /* Montserrat-Regular.ttf */; };
 		EA58730429BF097F00AEB39E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FE29BDB58800AEB39E /* Montserrat-Medium.ttf */; };
 		EA58730529BF098100AEB39E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */; };
+		EA6628A129EE809500D23A6F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6628A029EE809500D23A6F /* BaseCoordinator.swift */; };
+		EA6628A529EE84E400D23A6F /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6628A429EE84E400D23A6F /* HomeTabCoordinator.swift */; };
+		EA6628A729EE850E00D23A6F /* FavouritesTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6628A629EE850E00D23A6F /* FavouritesTabCoordinator.swift */; };
+		EA6628A929EE852200D23A6F /* ShoppingTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6628A829EE852200D23A6F /* ShoppingTabCoordinator.swift */; };
+		EA6628AB29EE853A00D23A6F /* ChatTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6628AA29EE853A00D23A6F /* ChatTabCoordinator.swift */; };
+		EA6628AD29EE854D00D23A6F /* UserTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6628AC29EE854D00D23A6F /* UserTabCoordinator.swift */; };
 		EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4929BC99CC00922342 /* AppDelegate.swift */; };
 		EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */; };
-		EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */; };
 		EAB29B5329BC99CF00922342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB29B5229BC99CF00922342 /* Assets.xcassets */; };
 		EAB29B5629BC99CF00922342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB29B5429BC99CF00922342 /* LaunchScreen.storyboard */; };
 		EAB29B6129BC9C2600922342 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29B6029BC9C2600922342 /* HomeViewController.swift */; };
@@ -51,10 +56,15 @@
 		EA5872FD29BDB58800AEB39E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		EA5872FE29BDB58800AEB39E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		EA58730029BDBE2300AEB39E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EA6628A029EE809500D23A6F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		EA6628A429EE84E400D23A6F /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
+		EA6628A629EE850E00D23A6F /* FavouritesTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTabCoordinator.swift; sourceTree = "<group>"; };
+		EA6628A829EE852200D23A6F /* ShoppingTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTabCoordinator.swift; sourceTree = "<group>"; };
+		EA6628AA29EE853A00D23A6F /* ChatTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabCoordinator.swift; sourceTree = "<group>"; };
+		EA6628AC29EE854D00D23A6F /* UserTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabCoordinator.swift; sourceTree = "<group>"; };
 		EAB29B4629BC99CC00922342 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB29B4929BC99CC00922342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EAB29B5229BC99CF00922342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAB29B5529BC99CF00922342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB29B5729BC99CF00922342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,9 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				EA52E47029C869A100E0D641 /* Protocol */,
-				EA52E46D29C8684500E0D641 /* AppCoordinator.swift */,
-				EA52E48529C86BB700E0D641 /* AuthenticationCoordinator.swift */,
-				EA52E47929C86B0F00E0D641 /* MainCoordinator.swift */,
+				EA6628A029EE809500D23A6F /* BaseCoordinator.swift */,
+				EA6628A229EE848200D23A6F /* AuthenticationCoordinator */,
+				EA6628A329EE84A600D23A6F /* CoreCoordinator */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -108,19 +118,6 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		EA52E47329C86A8B00E0D641 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				EAB29B4D29BC99CC00922342 /* MainTabBarViewController.swift */,
-				EAB29B6029BC9C2600922342 /* HomeViewController.swift */,
-				EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */,
-				EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */,
-				EAB29B6629BC9DA500922342 /* ChatViewController.swift */,
-				EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		EA5872FF29BDBB0400AEB39E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +125,27 @@
 				EA4069F529C2EC6A00E0EFD9 /* LoginViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EA6628A229EE848200D23A6F /* AuthenticationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EA52E48529C86BB700E0D641 /* AuthenticationCoordinator.swift */,
+			);
+			path = AuthenticationCoordinator;
+			sourceTree = "<group>";
+		};
+		EA6628A329EE84A600D23A6F /* CoreCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EA52E47929C86B0F00E0D641 /* MainCoordinator.swift */,
+				EA6628A429EE84E400D23A6F /* HomeTabCoordinator.swift */,
+				EA6628A629EE850E00D23A6F /* FavouritesTabCoordinator.swift */,
+				EA6628A829EE852200D23A6F /* ShoppingTabCoordinator.swift */,
+				EA6628AA29EE853A00D23A6F /* ChatTabCoordinator.swift */,
+				EA6628AC29EE854D00D23A6F /* UserTabCoordinator.swift */,
+			);
+			path = CoreCoordinator;
 			sourceTree = "<group>";
 		};
 		EAB29B3D29BC99CC00922342 = {
@@ -169,6 +187,7 @@
 			children = (
 				EAB29B4929BC99CC00922342 /* AppDelegate.swift */,
 				EAB29B4B29BC99CC00922342 /* SceneDelegate.swift */,
+				EA52E46D29C8684500E0D641 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -185,7 +204,11 @@
 		EAB29B5F29BC9BA000922342 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EA52E47329C86A8B00E0D641 /* Main */,
+				EAB29B6029BC9C2600922342 /* HomeViewController.swift */,
+				EAB29B6229BC9C8100922342 /* FavouritesViewController.swift */,
+				EAB29B6429BC9D6100922342 /* ShoppingCartViewController.swift */,
+				EAB29B6629BC9DA500922342 /* ChatViewController.swift */,
+				EAB29B6829BC9E0300922342 /* UserAccountViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -311,15 +334,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAB29B4E29BC99CC00922342 /* MainTabBarViewController.swift in Sources */,
+				EA6628A729EE850E00D23A6F /* FavouritesTabCoordinator.swift in Sources */,
 				EA58730129BDBE2300AEB39E /* RegisterViewController.swift in Sources */,
 				EAC7154F29BF40AE0085C6F1 /* DatabaseManager.swift in Sources */,
+				EA6628A929EE852200D23A6F /* ShoppingTabCoordinator.swift in Sources */,
 				EA52E48629C86BB700E0D641 /* AuthenticationCoordinator.swift in Sources */,
 				EA4069F629C2EC6A00E0EFD9 /* LoginViewController.swift in Sources */,
 				EA4069F929C2FA6400E0EFD9 /* UITextField+SecureToggle.swift in Sources */,
 				EA52E46E29C8684500E0D641 /* AppCoordinator.swift in Sources */,
+				EA6628A529EE84E400D23A6F /* HomeTabCoordinator.swift in Sources */,
 				EA52E47229C869AD00E0D641 /* Coordinator.swift in Sources */,
 				EAB29B4A29BC99CC00922342 /* AppDelegate.swift in Sources */,
+				EA6628AB29EE853A00D23A6F /* ChatTabCoordinator.swift in Sources */,
 				EA01615229DC040200915DA4 /* UserAccountViewModel.swift in Sources */,
 				EAB29B6529BC9D6100922342 /* ShoppingCartViewController.swift in Sources */,
 				EA4069FB29C30B0400E0EFD9 /* AuthManager.swift in Sources */,
@@ -327,10 +353,12 @@
 				EAC7155229BF43870085C6F1 /* UserApp.swift in Sources */,
 				EAB29B4C29BC99CC00922342 /* SceneDelegate.swift in Sources */,
 				EA52E47A29C86B0F00E0D641 /* MainCoordinator.swift in Sources */,
+				EA6628A129EE809500D23A6F /* BaseCoordinator.swift in Sources */,
 				EAC7154929BF307C0085C6F1 /* AuthenticationViewModel.swift in Sources */,
 				EAB29B6929BC9E0300922342 /* UserAccountViewController.swift in Sources */,
 				EAC7154C29BF3ADC0085C6F1 /* OnlineShopModel.xcdatamodeld in Sources */,
 				EAB29B7129BCA17200922342 /* Resources.swift in Sources */,
+				EA6628AD29EE854D00D23A6F /* UserTabCoordinator.swift in Sources */,
 				EAB29B6329BC9C8100922342 /* FavouritesViewController.swift in Sources */,
 				EAB29B6129BC9C2600922342 /* HomeViewController.swift in Sources */,
 			);

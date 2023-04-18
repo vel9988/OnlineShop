@@ -12,7 +12,7 @@ final class RegisterViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = AuthenticationViewModel()
+    let viewModel = AuthenticationViewModel()
     private var subscriptions: Set<AnyCancellable> = []
     
     //MARK: - Subviews
@@ -217,7 +217,7 @@ private extension RegisterViewController {
     }
     
     @objc func didTapLoginButton() {
-        
+        viewModel.showLoginScreen()
     }
     
     @objc func didChangeFirsNameField() {
@@ -295,7 +295,7 @@ private extension RegisterViewController {
         ]
         
         let passwordTextFieldConstraints = [
-            passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 12),
+            passwordTextField.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
             passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 35),
             passwordTextField.heightAnchor.constraint(equalToConstant: C.registerTextFieldsHeight),
             passwordTextField.widthAnchor.constraint(equalToConstant: C.registerTextFieldsWidth)
