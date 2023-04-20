@@ -22,11 +22,14 @@ final class AuthenticationCoordinator: BaseCoordinator {
         vc.viewModel.showLoginScreen = { [weak self] in
             self?.showLoginScreen()
         }
+        
+        
     }
     
     func showLoginScreen() {
         let vc = LoginViewController()
-        rootViewController.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .overCurrentContext
+        rootViewController.present(vc, animated: true)
     }
     
     

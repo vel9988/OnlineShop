@@ -37,7 +37,8 @@ final class AppCoordinator: BaseCoordinator {
 //            }
 //            .store(in: &subscriptions)
         
-        startMain()
+//        startMain()
+        startAuth()
     }
     
     private func startMain() {

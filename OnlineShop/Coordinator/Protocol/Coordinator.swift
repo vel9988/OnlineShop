@@ -22,4 +22,7 @@ extension Coordinator {
     func free(coordinator: Coordinator) {
         childCoordinators = childCoordinators.filter { $0 !== coordinator }
     }
+    
+    
+    
 }

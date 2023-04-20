@@ -12,7 +12,7 @@ final class LoginViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = AuthenticationViewModel()
+    let viewModel = AuthenticationViewModel()
     private var subscriptions: Set<AnyCancellable> = []
     
     //MARK: - Subviews

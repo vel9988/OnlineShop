@@ -171,7 +171,7 @@
 				EAC7154D29BF407B0085C6F1 /* Manager */,
 				EA52E46C29C8682E00E0D641 /* Coordinator */,
 				EAC7154729BF304F0085C6F1 /* ViewModel */,
-				EAB29B5E29BC9B9400922342 /* Controller */,
+				EAB29B5E29BC9B9400922342 /* View */,
 				EAC7155029BF43640085C6F1 /* Model */,
 				EAB29B6A29BCA06200922342 /* Resources */,
 				EA4069F729C2FA3600E0EFD9 /* Extension */,
@@ -192,13 +192,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		EAB29B5E29BC9B9400922342 /* Controller */ = {
+		EAB29B5E29BC9B9400922342 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EA5872FF29BDBB0400AEB39E /* Authentication */,
 				EAB29B5F29BC9BA000922342 /* Core */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EAB29B5F29BC9BA000922342 /* Core */ = {

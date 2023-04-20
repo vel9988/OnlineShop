@@ -13,7 +13,7 @@ final class AuthenticationViewModel: ObservableObject {
     //MARK: - Properties
     
     var showLoginScreen: () -> () = { }
-
+    
     @Published var firstName: String?
     @Published var lastName: String?
     @Published var email: String?
